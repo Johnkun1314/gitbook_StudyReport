@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.wrapter{
+    width: 100%;
+    height: 500px;
+    border:1px solid black;
+    background-color: bisque;
+    position: relative;
+}
+
+.wrapter .content{
+    position: relative;
+    width:500px;
+    height: 350px;
+    border:1px solid black;
+    margin: 0 auto;
+    margin-top: 10px; 
+    overflow: hidden;
+  
+}
+.wrapter .content .one{
+    position:absolute;
+    width:2000px;
+    height: 350px;
+    animation:picture 8s infinite linear;
+  
+}
+
+@keyframes picture{
+   0%,0%{
+       left:0px;
+   }
+   33%,33%{
+       left: -500px;
+   }
+   66%,66%{
+       left:-1000px;
+   }
+   100%,100%{
+       left: -1500px;
+   }
+}
+
+.wrapter .content .one li{
+    float: left;
+    
+}
+
+
+
+.wrapter .content .one li img{
+    width: 500px;
+    height: 350px;
+}
+
+
+.wrapter .two{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    border:2px solid greenyellow;
+    overflow: hidden;
+}
+
+
+.wrapter .dots{
+    position:absolute;
+    display:block;
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+  } 
+.wrapter .dots .dot-1{
+    animation-name: dot1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.wrapter .dots .dot-2{
+    animation-name: dot2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.wrapter .dots .dot-3{
+    animation-name: dot3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes dot1{
+    0%,28% {
+        background-color: black;
+    }
+    33%,61%{
+      background-color: transparent;
+    }
+    66%,91%{
+        background-color: transparent;
+    }
+    99%,100%{
+        background-color: black;
+    }
+ }
+ @keyframes dot2{
+    0%,28% {
+        background-color:transparent;
+    }
+    33%,61%{
+      background-color: black;
+    }
+    66%,91%{
+        background-color: transparent;
+    }
+    99%,100%{
+        background-color:transparent;
+    }
+ }
+ @keyframes dot3{
+    0%,28% {
+        background-color:transparent;
+    }
+    33%,61%{
+      background-color: transparent;
+    }
+    66%,91%{
+        background-color: black;
+    }
+    99%,100%{
+        background-color: transparent;
+    }
+ }
+
+.wrapter .dots li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    border:2px solid red;
+    border-radius: 50%;
+    margin-left: 120px;
+    cursor: pointer;
+    margin-top: 5.5px;
+    line-height: 10px;
+    text-align: center;
+   
+}
+
+.wrapter .two .dots li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 12px;
+    color:black;
+}
+.wrapter .two .dots a:hover  {
+   
+    background-color:black;
+}
